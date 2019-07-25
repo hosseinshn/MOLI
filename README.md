@@ -1,9 +1,7 @@
 # MOLI
 MOLI: Multi-Omics Late Integration with deep neural networks for drug response prediction
 
-Preprint: https://www.biorxiv.org/content/10.1101/531327v1.article-info
-
-
+Presented at ISMB/ECCB 2019 in Basel (MLCSB COSI): https://academic.oup.com/bioinformatics/article/35/14/i501/5529255
 
 We used the code available here https://github.com/adambielski/siamese-triplet for building triplets. 
 
