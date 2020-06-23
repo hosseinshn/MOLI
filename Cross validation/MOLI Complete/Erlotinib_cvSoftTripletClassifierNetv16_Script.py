@@ -39,22 +39,22 @@ PDXE = pd.read_csv("PDX_exprs.Erlotinib.eb_with.GDSC_exprs.Erlotinib.tsv",
                    sep = "\t", index_col=0, decimal = ",")
 PDXE = pd.DataFrame.transpose(PDXE)
 
-PDXM = pd.read_csv("PDX_mutations.Erlotinibv2.tsv", 
+PDXM = pd.read_csv("PDX_mutations.Erlotinib.tsv", 
                    sep = "\t", index_col=0, decimal = ".")
 PDXM = pd.DataFrame.transpose(PDXM)
 
-PDXC = pd.read_csv("PDX_CNA.Erlotinibv2.tsv", 
+PDXC = pd.read_csv("PDX_CNA.Erlotinib.tsv", 
                    sep = "\t", index_col=0, decimal = ".")
 PDXC.drop_duplicates(keep='last')
 PDXC = pd.DataFrame.transpose(PDXC)
 PDXC = PDXC.loc[:,~PDXC.columns.duplicated()]
 
-GDSCM = pd.read_csv("GDSC_mutations.Erlotinibv2.tsv", 
+GDSCM = pd.read_csv("GDSC_mutations.Erlotinib.tsv", 
                     sep = "\t", index_col=0, decimal = ".")
 GDSCM = pd.DataFrame.transpose(GDSCM)
 
 
-GDSCC = pd.read_csv("GDSC_CNA.Erlotinibv2.tsv", 
+GDSCC = pd.read_csv("GDSC_CNA.Erlotinib.tsv", 
                     sep = "\t", index_col=0, decimal = ".")
 GDSCC.drop_duplicates(keep='last')
 GDSCC = pd.DataFrame.transpose(GDSCC)

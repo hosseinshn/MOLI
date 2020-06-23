@@ -43,7 +43,7 @@ PDXM = pd.read_csv("PDX_mutations.Erlotinib.tsv",
                    sep = "\t", index_col=0, decimal = ",")
 PDXM = pd.DataFrame.transpose(PDXM)
 
-PDXC = pd.read_csv("PDX_CNV.Erlotinib.tsv", 
+PDXC = pd.read_csv("PDX_CNA.Erlotinib.tsv", 
                    sep = "\t", index_col=0, decimal = ",")
 PDXC.drop_duplicates(keep='last')
 PDXC = pd.DataFrame.transpose(PDXC)
@@ -54,7 +54,7 @@ GDSCM = pd.read_csv("GDSC_mutations.Erlotinib.tsv",
 GDSCM = pd.DataFrame.transpose(GDSCM)
 
 
-GDSCC = pd.read_csv("GDSC_CNV.Erlotinib.tsv", 
+GDSCC = pd.read_csv("GDSC_CNA.Erlotinib.tsv", 
                     sep = "\t", index_col=0, decimal = ",")
 GDSCC.drop_duplicates(keep='last')
 GDSCC = pd.DataFrame.transpose(GDSCC)

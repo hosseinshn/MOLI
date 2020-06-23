@@ -49,7 +49,7 @@ PDXEerlo = pd.DataFrame.transpose(PDXEerlo)
 PDXMerlo = pd.read_csv("PDX_mutations.Erlotinib.tsv", 
                    sep = "\t", index_col=0, decimal = ",")
 PDXMerlo = pd.DataFrame.transpose(PDXMerlo)
-PDXCerlo = pd.read_csv("PDX_CNV.Erlotinib.tsv", 
+PDXCerlo = pd.read_csv("PDX_CNA.Erlotinib.tsv", 
                    sep = "\t", index_col=0, decimal = ",")
 PDXCerlo.drop_duplicates(keep='last')
 PDXCerlo = pd.DataFrame.transpose(PDXCerlo)
@@ -61,7 +61,7 @@ PDXEcet = pd.DataFrame.transpose(PDXEcet)
 PDXMcet = pd.read_csv("PDX_mutations.Cetuximab.tsv", 
                    sep = "\t", index_col=0, decimal = ",")
 PDXMcet = pd.DataFrame.transpose(PDXMcet)
-PDXCcet = pd.read_csv("PDX_CNV.Cetuximab.tsv", 
+PDXCcet = pd.read_csv("PDX_CNA.Cetuximab.tsv", 
                    sep = "\t", index_col=0, decimal = ",")
 PDXCcet.drop_duplicates(keep='last')
 PDXCcet = pd.DataFrame.transpose(PDXCcet)

@@ -35,16 +35,16 @@ GDSCR = pd.read_csv("GDSC_response.Gemcitabine.tsv", sep = "\t", index_col=0, de
 PDXE = pd.read_csv("PDX_exprs.Gemcitabine.eb_with.GDSC_exprs.Gemcitabine.tsv", sep = "\t", index_col=0, decimal = ",")
 PDXE = pd.DataFrame.transpose(PDXE)
 
-PDXM = pd.read_csv("PDX_mutations.Gemcitabinev2.tsv", sep = "\t", index_col=0, decimal = ".")
+PDXM = pd.read_csv("PDX_mutations.Gemcitabine.tsv", sep = "\t", index_col=0, decimal = ".")
 PDXM = pd.DataFrame.transpose(PDXM)
 
-PDXC = pd.read_csv("PDX_CNA.Gemcitabinev2.tsv", sep = "\t", index_col=0, decimal = ".")
+PDXC = pd.read_csv("PDX_CNA.Gemcitabine.tsv", sep = "\t", index_col=0, decimal = ".")
 PDXC = pd.DataFrame.transpose(PDXC)
 
-GDSCM = pd.read_csv("GDSC_mutations.Gemcitabinev2.tsv", sep = "\t", index_col=0, decimal = ".")
+GDSCM = pd.read_csv("GDSC_mutations.Gemcitabine.tsv", sep = "\t", index_col=0, decimal = ".")
 GDSCM = pd.DataFrame.transpose(GDSCM)
 
-GDSCC = pd.read_csv("GDSC_CNA.Gemcitabinev2.tsv", sep = "\t", index_col=0, decimal = ".")
+GDSCC = pd.read_csv("GDSC_CNA.Gemcitabine.tsv", sep = "\t", index_col=0, decimal = ".")
 GDSCC.drop_duplicates(keep='last')
 PDXC = PDXC.loc[:,~PDXC.columns.duplicated()]
 GDSCC = pd.DataFrame.transpose(GDSCC)

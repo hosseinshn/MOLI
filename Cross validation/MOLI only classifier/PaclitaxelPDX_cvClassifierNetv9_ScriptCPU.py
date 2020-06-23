@@ -33,16 +33,16 @@ GDSCR = pd.read_csv("GDSC_response.Paclitaxel.tsv", sep = "\t", index_col=0, dec
 PDXE = pd.read_csv("PDX_exprs.Paclitaxel.eb_with.GDSC_exprs.Paclitaxel.tsv", sep = "\t", index_col=0, decimal = ",")
 PDXE = pd.DataFrame.transpose(PDXE)
 
-PDXM = pd.read_csv("PDX_mutations.Paclitaxelv2.tsv", sep = "\t", index_col=0, decimal = ".")
+PDXM = pd.read_csv("PDX_mutations.Paclitaxel.tsv", sep = "\t", index_col=0, decimal = ".")
 PDXM = pd.DataFrame.transpose(PDXM)
 
-PDXC = pd.read_csv("PDX_CNA.Paclitaxelv2.tsv", sep = "\t", index_col=0, decimal = ".")
+PDXC = pd.read_csv("PDX_CNA.Paclitaxel.tsv", sep = "\t", index_col=0, decimal = ".")
 PDXC = pd.DataFrame.transpose(PDXC)
 
-GDSCM = pd.read_csv("GDSC_mutations.Paclitaxelv2.tsv", sep = "\t", index_col=0, decimal = ".")
+GDSCM = pd.read_csv("GDSC_mutations.Paclitaxel.tsv", sep = "\t", index_col=0, decimal = ".")
 GDSCM = pd.DataFrame.transpose(GDSCM)
 
-GDSCC = pd.read_csv("GDSC_CNA.Paclitaxelv2.tsv", sep = "\t", index_col=0, decimal = ".")
+GDSCC = pd.read_csv("GDSC_CNA.Paclitaxel.tsv", sep = "\t", index_col=0, decimal = ".")
 GDSCC.drop_duplicates(keep='last')
 PDXC = PDXC.loc[:,~PDXC.columns.duplicated()]
 GDSCC = pd.DataFrame.transpose(GDSCC)

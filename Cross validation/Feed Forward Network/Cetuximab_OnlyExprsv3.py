@@ -43,7 +43,7 @@ PDXM = pd.read_csv("PDX_mutations.Cetuximab.tsv",
                    sep = "\t", index_col=0, decimal = ",")
 PDXM = pd.DataFrame.transpose(PDXM)
 
-PDXC = pd.read_csv("PDX_CNV.Cetuximab.tsv", 
+PDXC = pd.read_csv("PDX_CNA.Cetuximab.tsv", 
                    sep = "\t", index_col=0, decimal = ",")
 PDXC.drop_duplicates(keep='last')
 PDXC = pd.DataFrame.transpose(PDXC)
@@ -53,7 +53,7 @@ GDSCM = pd.read_csv("GDSC_mutations.Cetuximab.tsv",
 GDSCM = pd.DataFrame.transpose(GDSCM)
 
 
-GDSCC = pd.read_csv("GDSC_CNV.Cetuximab.tsv", 
+GDSCC = pd.read_csv("GDSC_CNA.Cetuximab.tsv", 
                     sep = "\t", index_col=0, decimal = ",")
 GDSCC.drop_duplicates(keep='last')
 GDSCC = pd.DataFrame.transpose(GDSCC)

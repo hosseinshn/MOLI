@@ -46,7 +46,7 @@ TCGAC = pd.read_csv("TCGA_CNA.Docetaxel.tsv",
 TCGAC = pd.DataFrame.transpose(TCGAC)
 TCGAC = TCGAC.loc[:,~TCGAC.columns.duplicated()]
 
-GDSCM = pd.read_csv("GDSC_mutations.Docetaxelv2.tsv", 
+GDSCM = pd.read_csv("GDSC_mutations.Docetaxel.tsv", 
                     sep = "\t", index_col=0, decimal = ".")
 GDSCM = pd.DataFrame.transpose(GDSCM)
 GDSCM = GDSCM.loc[:,~GDSCM.columns.duplicated()]
@@ -88,7 +88,7 @@ GDSCE = GDSCE.loc[ls2,ls]
 GDSCM = GDSCM.loc[ls2,ls]
 GDSCC = GDSCC.loc[ls2,ls]
 
-GDSCR = pd.read_csv("GDSC_response.Docetaxelv2.tsv", 
+GDSCR = pd.read_csv("GDSC_response.Docetaxel.tsv", 
                     sep = "\t", index_col=0, decimal = ",")
 TCGAR = pd.read_csv("TCGA_response.Docetaxel.tsv", 
                        sep = "\t", index_col=0, decimal = ",")

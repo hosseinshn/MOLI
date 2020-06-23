@@ -44,7 +44,7 @@ PDXM = pd.read_csv("PDX_mutations.Paclitaxel.tsv",
                    sep = "\t", index_col=0, decimal = ",")
 PDXM = pd.DataFrame.transpose(PDXM)
 
-PDXC = pd.read_csv("PDX_CNV.Paclitaxel.tsv", 
+PDXC = pd.read_csv("PDX_CNA.Paclitaxel.tsv", 
                    sep = "\t", index_col=0, decimal = ",")
 PDXC.drop_duplicates(keep='last')
 PDXC = pd.DataFrame.transpose(PDXC)
@@ -55,7 +55,7 @@ GDSCM = pd.read_csv("GDSC_mutations.Paclitaxel.tsv",
 GDSCM = pd.DataFrame.transpose(GDSCM)
 
 
-GDSCC = pd.read_csv("GDSC_CNV.Paclitaxel.tsv", 
+GDSCC = pd.read_csv("GDSC_CNA.Paclitaxel.tsv", 
                     sep = "\t", index_col=0, decimal = ",")
 GDSCC.drop_duplicates(keep='last')
 GDSCC = pd.DataFrame.transpose(GDSCC)
