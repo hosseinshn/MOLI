@@ -5,7 +5,7 @@ Presented at ISMB/ECCB 2019 in Basel (MLCSB COSI): https://academic.oup.com/bioi
 
 We used the code available here https://github.com/adambielski/siamese-triplet for building triplets. 
 
-Harmonized data are published at https://zenodo.org/record/3912044#.XvkeNh9fjms .
+Harmonized data are published at https://zenodo.org/record/4036592 .
 
 
 All rights reserved.
